@@ -1,1 +1,48 @@
-# package.json8
+{
+  "name": "validation-tool-interface",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "validate-structure": "tsx scripts/validate-structure.ts",
+    "validate-folder": "tsx scripts/validate-structure.ts"
+  },
+  "dependencies": {
+    "lucide-react": "0.554.0",
+    "next": "15.5.4",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react-markdown": "10.1.0",
+    "remark-gfm": "4.0.1",
+    "shell-quote": "1.8.3",
+    "viem": "2.38.2",
+    "yaml": "2.8.1",
+    "zod": "3.22.4"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "3",
+    "@tailwindcss/postcss": "4",
+    "@types/jest": "29.5.12",
+    "@types/node": "22.0.0",
+    "@types/react": "19.2.0",
+    "@types/react-dom": "19",
+    "@types/shell-quote": "1.7.5",
+    "eslint": "9",
+    "eslint-config-next": "15.5.4",
+    "jest": "30.2.0",
+    "ts-jest": "29.4.5",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3"
+  },
+  "overrides": {
+    "babel-plugin-istanbul": "7.0.1",
+    "test-exclude": "7.0.1",
+    "glob": "10.5.0"
+  }
+}
